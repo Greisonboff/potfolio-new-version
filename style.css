@@ -195,6 +195,7 @@ footer #linkedin {
 #projectsContainer ul {
     display: flex;
     justify-content: center;
+    padding-inline-start: inherit;
 }
 
 .boxLine {
@@ -271,8 +272,6 @@ footer #linkedin {
     margin: 0;
     padding-right: 10px
 }
-
-
 
 #mataMosca a,
 #organo a {
