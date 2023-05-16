@@ -214,6 +214,8 @@ footer #linkedin {
 #projectsListGrup {
     min-width: 30%;
     font-size: 1.1em;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 #projectsListGrup li {
