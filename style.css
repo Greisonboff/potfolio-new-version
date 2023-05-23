@@ -222,6 +222,7 @@ footer #linkedin {
 #projectsListGrup li {
     padding: 5px 15px;
     list-style: none;
+    cursor: pointer;
 }
 
 .hideProjects {
