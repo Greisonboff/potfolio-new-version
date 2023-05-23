@@ -15,6 +15,10 @@ a {
     font-size: 22px !important;
 }
 
+#content span{
+    font-size: 18px !important;
+}
+
 .content p{
     font-size: 18px !important;
 }
