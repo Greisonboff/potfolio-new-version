@@ -3,26 +3,6 @@ a {
     text-decoration: none;
 }
 
-#content p, #content a{
-    font-size: 18px !important;
-}
-
-#content h2{
-    font-size: 26px !important;
-}
-
-#content h3{
-    font-size: 22px !important;
-}
-
-#content span{
-    font-size: 18px !important;
-}
-
-.content p{
-    font-size: 18px !important;
-}
-
 body {
     font-family: math;
     margin: inherit;
