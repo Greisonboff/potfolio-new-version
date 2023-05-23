@@ -62,7 +62,7 @@
 }
 
 .mobile #content {
-    min-height: calc(100vh - 380px - 14em);
+    min-height: 60vh;
 } 
 
 .mobile footer #linkedin {
