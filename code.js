@@ -1,6 +1,11 @@
 //Json innfos
 var jsonInfos = [
     {
+        "categoria": "React",
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/react-crie-primeira-pagina-web",
+        "nome_curso": "React: Comece seu projeto full stack"
+    },
+    {
         "categoria": "React Native",
         "link": "https://cursos.alura.com.br/certificate/greison-boff/react-native-informacoes-localmente",
         "nome_curso": "React Native: Guardando informações localmente"
