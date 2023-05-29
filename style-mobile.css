@@ -1,11 +1,4 @@
 /*MOBILE*/
-.mobile #infoUser {
-    font-size: 1.5em !important;
-}
-
-.mobile #boxMenu li{
-    font-size: 1em !important; 
-}
 
 .mobile #infoUser{
     height: 320px !important;
@@ -15,23 +8,7 @@
     height: 100px !important;
 }
 
-.mobile .boxElements {
-    padding: 10px 10% !important;
-    font-size: 0.8em !important;
-}
-
-.mobile .academic {
-    font-size: 1.35em !important;
-}
-
-.mobile .academic h2,
-.mobile .academic span,
-.mobile .academic p {
-    font-size: 1em !important;
-}
-
 .mobile .projects{
-    font-size: 1.5em !important;
     padding: 0px !important;
 }
 
@@ -53,18 +30,32 @@
 
 .mobile #projectsListGrup {
     min-width: 30%;
-    font-size: 1.1em;
+}
+
+.mobile #projectsListGrup li{
+    font-size: 26px !important;
 }
 
 .mobile footer div {
     height: 9em;
-    font-size: 1.2em;
 }
 
 .mobile #content {
-    min-height: 60vh;
+    min-height: 60dvh;
 } 
 
 .mobile footer #linkedin {
     height: 130px;
+}
+
+.mobile .certificates{
+    padding: 0;
+}
+
+.mobile #projectsListGrup li {
+    padding: 10px 20px;
+}
+
+.mobile #projectsListGrup svg{
+    width: 50px;
 }
