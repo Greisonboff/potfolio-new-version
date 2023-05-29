@@ -268,9 +268,7 @@ showElement = (e) => {
             document.querySelectorAll('.boxElements')[i].classList.add('hide');
         }
     }
-    setTimeout(() => {
-        document.querySelector(`.${e.getAttribute('id')}`).classList.remove('hide');
-    }, 200);
+    document.querySelector(`.${e.getAttribute('id')}`).classList.remove('hide');
 }
 
 showElementProject = (e) => {
