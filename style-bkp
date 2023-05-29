@@ -1,0 +1,308 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: math;
+    margin: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+span {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#boxMenu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: inherit;
+    margin: auto;
+}
+
+#boxMenu li {
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#box {
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.infos {
+    background-color: blue;
+}
+
+.hide {
+    display: none;
+}
+
+.certificates,
+.skills,
+.academic {
+    padding: 10px 20%;
+}
+
+.certificates {
+    padding: 10px 20%;
+}
+
+.certificates li a:hover {
+    text-decoration: revert;
+}
+
+.active {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.objective {
+    padding: 10px 10%;
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+}
+
+#content {
+    min-height: 66dvh;
+}
+
+#content .academic,
+#content .objective,
+#content .skills {
+    font-size: 1.5em;
+}
+
+#content a,
+#content .history {
+    font-size: 1.1em;
+}
+
+#content .history {
+    padding: 10px 20%;
+}
+
+#infoUser img {
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+}
+
+#infoUser {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.1em;
+    padding: 4% 0 2%;
+    background-image: url(./imagens/fundo-tec.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+@media(max-width: 1020px) {
+    #infoUser {
+        height: 300px;
+        font-size: 1em;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#contacts li {
+    display: flex;
+    align-items: center;
+    margin: 3px;
+}
+
+#contacts li a:hover {
+    text-decoration: revert;
+}
+
+#contacts img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#contacts a {
+    display: flex;
+}
+
+.history,
+.skills {
+    text-indent: 1.5em;
+}
+
+footer div {
+    width: 100%;
+    height: 6em;
+    background-color: black;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer #linkedin {
+    height: 80px;
+    cursor: pointer;
+}
+
+#citation h3,
+#citation span {
+    color: rgba(240, 240, 240, 1);
+    font-family: math;
+}
+
+#citation span {
+    float: right;
+}
+
+#projectsContainer {
+    display: flex;
+    padding: 2% 5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projectsContainer ul {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: inherit;
+}
+
+.boxLine {
+    height: 10px;
+    width: 100%;
+    background-color: #DCDCDC;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.projectsListActive {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+#projectsListGrup {
+    min-width: 30%;
+    font-size: 1.1em;
+    width: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#projectsListGrup li {
+    padding: 5px 15px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.hideProjects {
+    display: none !important;
+}
+
+.projectsBox {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.projectsListBox {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+#organo div:first-child,
+#mataMosca div:first-child {
+    margin: 2% 5%;
+    text-align: center;
+}
+
+#organo p,
+#mataMosca p {
+    text-align: justify;
+}
+
+#organo img,
+#mataMosca img {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+#mataMosca img,
+#organo img {
+    cursor: pointer;
+}
+
+#linkGame img {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px
+}
+
+#mataMosca a,
+#organo a {
+    animation: go-back .6s infinite alternate;
+}
+
+@keyframes go-back {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.01);
+    }
+}
+
+#linkGame,
+#organo a {
+    text-decoration: underline;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 4%;
+}
+
+#infoUserBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#infoUserBoxContacts {
+    display: flex;
+    justify-content: space-evenly;
+}
