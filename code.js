@@ -12,8 +12,8 @@ var jsonInfos = [
     },
     {
         "categoria": "Ferramentas Google",
-        "link":"https://cursos.alura.com.br/certificate/greison-boff/google-tag-manager-aplicacao-gerenciamento-tags",
-        "nome_curso":"Google Tag Manager: aplicação e gerenciamento de Tags"
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/google-tag-manager-aplicacao-gerenciamento-tags",
+        "nome_curso": "Google Tag Manager: aplicação e gerenciamento de Tags"
     },
     {
         "categoria": "React Native",
@@ -42,8 +42,8 @@ var jsonInfos = [
     },
     {
         "categoria": "Ferramentas Google",
-        "link":"https://cursos.alura.com.br/certificate/greison-boff/google-analytics-implementacao-relatorios",
-        "nome_curso":"Google Analytics 4: implementação e relatórios"
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/google-analytics-implementacao-relatorios",
+        "nome_curso": "Google Analytics 4: implementação e relatórios"
     },
     {
         "categoria": "React",
@@ -241,7 +241,7 @@ createDivUl = (e) => {
 createLi = (categoria, link, nome) => {
     elemetLi = document.createElement('li');
     elemetLi.innerHTML = `<a href=${link} data-category = ${categoria.replace(' ', '_')} target="_blank">${nome}</a>`;
-    document.querySelector(`body .certificates div.${categoria.replace(' ', '_')}`).append(elemetLi);
+    document.querySelector(`body .certificates div.${categoria.replace(' ', '_')} ul`).append(elemetLi);
 }
 
 var returnElement = (e) => {
@@ -268,21 +268,26 @@ showElement = (e) => {
             document.querySelectorAll('.boxElements')[i].classList.add('hide');
         }
     }
-    document.querySelector(`.${e.getAttribute('id')}`).classList.remove('hide');
-}  
+    setTimeout(() => {
+        document.querySelector(`.${e.getAttribute('id')}`).classList.remove('hide');
+    }, 200);
+}
 
 showElementProject = (e) => {
-    for (let i = 0; i < document.querySelectorAll('.projectsList').length; i++) {
-        document.querySelectorAll('.projectsList')[i].classList.remove('projectsListActive');
-    }
-    for (let i = 0; i < document.querySelectorAll('.projectsListBox').length; i++) {
-        if (!document.querySelectorAll('.projectsListBox')[i].classList.value.includes('hideProjects')) {
-            document.querySelectorAll('.projectsListBox')[i].classList.add('hideProjects');
+    if (!e.classList.value.includes('projectsListActive')) {
+        for (let i = 0; i < document.querySelectorAll('.projectsList').length; i++) {
+            document.querySelectorAll('.projectsList')[i].classList.remove('projectsListActive');
         }
+        for (let i = 0; i < document.querySelectorAll('.projectsListBox').length; i++) {
+            if (!document.querySelectorAll('.projectsListBox')[i].classList.value.includes('hideProjects')) {
+                document.querySelectorAll('.projectsListBox')[i].classList.add('hideProjects');
+            }
+        }
+
+        e.classList.add('projectsListActive');
+        document.querySelector(`.projectsBox #${e.getAttribute('id')}`).classList.remove('hideProjects');
     }
-    e.classList.add('projectsListActive');
-    document.querySelector(`.projectsBox #${e.getAttribute('id')}`).classList.remove('hideProjects');
-}  
+}
 
 device = () => {
     const ua = navigator.userAgent;
@@ -294,6 +299,18 @@ device = () => {
     }
     return "desktop";
 };
-if(device() != "desktop"){
+if (device() != "desktop") {
     document.querySelector('body').classList.add('mobile');
+}
+
+nextProject = () => {
+    var e = document.querySelector('.projectsList.projectsListActive').nextElementSibling;
+    document.querySelector('.projectsList.projectsListActive').nextElementSibling == null ? e = document.querySelectorAll('.projectsList')[0] : '';
+    showElementProject(e);
+}
+
+prevProject = () => {
+    var e = document.querySelector('.projectsList.projectsListActive').previousElementSibling;
+    document.querySelector('.projectsList.projectsListActive').previousElementSibling == null ? e = document.querySelectorAll('.projectsList')[document.querySelectorAll('.projectsList').length - 1] : '';
+    showElementProject(e);
 }
