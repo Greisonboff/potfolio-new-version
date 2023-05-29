@@ -1,0 +1,70 @@
+/*MOBILE*/
+.mobile #infoUser {
+    font-size: 1.5em !important;
+}
+
+.mobile #boxMenu li{
+    font-size: 1em !important; 
+}
+
+.mobile #infoUser{
+    height: 320px !important;
+}
+
+.mobile #box {
+    height: 100px !important;
+}
+
+.mobile .boxElements {
+    padding: 10px 10% !important;
+    font-size: 0.8em !important;
+}
+
+.mobile .academic {
+    font-size: 1.35em !important;
+}
+
+.mobile .academic h2,
+.mobile .academic span,
+.mobile .academic p {
+    font-size: 1em !important;
+}
+
+.mobile .projects{
+    font-size: 1.5em !important;
+    padding: 0px !important;
+}
+
+.mobile #organo img,
+.mobile #mataMosca img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 4%;
+}
+
+.mobile #linkGame img {
+    height: 8%;
+    width: 8%;
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.mobile #projectsListGrup {
+    min-width: 30%;
+    font-size: 1.1em;
+}
+
+.mobile footer div {
+    height: 9em;
+    font-size: 1.2em;
+}
+
+.mobile #content {
+    min-height: 60vh;
+} 
+
+.mobile footer #linkedin {
+    height: 130px;
+}
