@@ -3,6 +3,22 @@ a {
     text-decoration: none;
 }
 
+#content {
+    font-size: 20px;
+    margin: 20px auto;
+    padding: 0 10%;
+    min-width: 70vw;
+}
+
+#infoUser,
+#projectsContainer li {
+    font-size: 22px;
+}
+
+.certificates h3 {
+    text-align: inherit;
+}
+
 body {
     font-family: math;
     margin: inherit;
@@ -27,14 +43,19 @@ span {
 }
 
 #boxMenu li {
-    padding: 4px 8px;
+    transition: all .6s ease;
+    font-weight: bold;
+    padding: 8px 10px;
     margin: 2px;
     border-radius: 8px;
     cursor: pointer;
     text-align: center;
     display: flex;
     align-items: center;
-    font-size: 1.2em;
+}
+
+.boxElements {
+    transition: all .6s ease;
 }
 
 #box {
@@ -52,14 +73,12 @@ span {
     display: none;
 }
 
-.certificates,
-.skills,
 .academic {
-    padding: 10px 20%;
+    text-align: center;
 }
 
 .certificates {
-    padding: 10px 20%;
+    padding: 10px 15%;
 }
 
 .certificates li a:hover {
@@ -72,7 +91,6 @@ span {
 }
 
 .objective {
-    padding: 10px 10%;
     text-align: center;
 }
 
@@ -84,21 +102,6 @@ span {
     min-height: 66dvh;
 }
 
-#content .academic,
-#content .objective,
-#content .skills {
-    font-size: 1.5em;
-}
-
-#content a,
-#content .history {
-    font-size: 1.1em;
-}
-
-#content .history {
-    padding: 10px 20%;
-}
-
 #infoUser img {
     border-radius: 10%;
     height: 200px;
@@ -108,7 +111,6 @@ span {
 #infoUser {
     display: flex;
     justify-content: space-evenly;
-    font-size: 1.1em;
     padding: 4% 0 2%;
     background-image: url(./imagens/fundo-tec.png);
     background-size: cover;
@@ -117,10 +119,16 @@ span {
     height: 250px;
 }
 
-@media(max-width: 1020px) {
+@media(max-width: 1050px) {
     #infoUser {
         height: 300px;
-        font-size: 1em;
+    }
+}
+
+@media(max-width: 1115px) {
+    #infoUser,
+    #projectsContainer li {
+        font-size: 20px;
     }
 }
 
@@ -187,15 +195,14 @@ footer #linkedin {
 
 #projectsContainer {
     display: flex;
-    padding: 2% 5%;
     flex-direction: column;
     align-items: center;
+    width: 70vw;
 }
 
 #projectsContainer ul {
     display: flex;
     justify-content: center;
-    padding-inline-start: inherit;
 }
 
 .boxLine {
@@ -208,24 +215,29 @@ footer #linkedin {
 }
 
 .projectsListActive {
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    transition: all .6s ease;
+    border: 1px solid rgba(0, 0, 0, 0.6) !important;
     border-radius: 5px;
+    background-color: #cfcfcf;
 }
 
 #projectsListGrup {
     min-width: 30%;
-    font-size: 1.1em;
-    width: 100%;
+    width: 90vw;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
 }
 
 #projectsListGrup li {
-    padding: 5px 15px;
-    list-style: none;
     cursor: pointer;
+    padding: 10px 10px;
+    list-style: none;
+    border: 1px solid transparent;
 }
 
 .hideProjects {
+    transition: all .6s ease;
     display: none !important;
 }
 
@@ -233,7 +245,6 @@ footer #linkedin {
     display: flex;
     margin: auto;
     justify-content: center;
-    padding-left: 10px;
 }
 
 .projectsListBox {
@@ -305,4 +316,9 @@ footer #linkedin {
 #infoUserBoxContacts {
     display: flex;
     justify-content: space-evenly;
+}
+
+#projectsListGrup svg {
+    width: 30px;
+    cursor: pointer;
 }
