@@ -6,9 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style-mobile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="icon" 
-      type="image/jpg" 
-      href="./imagens/comece.png" />
+    <link rel="icon" type="image/jpg" href="./imagens/comece.png" />
     <title>Dev Greison</title>
 </head>
 
@@ -111,7 +109,7 @@
         </div>
         <div class="boxElements academic hide">
             <h2>Educação Acadêmica</h2>
-            <span>UNINTER Centro Universitário Internacional</span>
+            <h4>UNINTER Centro Universitário Internacional</h4>
             <p>Ensino Superior, Analise e desenvolvimento de sistemas
                 2019 - dez de 2021
             </p>
@@ -133,6 +131,10 @@
             <h2>Projetos</h2>
             <div id="projectsContainer">
                 <div id="projectsListGrup">
+                    <svg onclick="prevProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m5 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
                     <ul>
                         <li class="projectsList projectsListActive" id="mataMosca"
                             onmouseover="showElementProject(this)" onclick="showElementProject(this)">Projeto Jogo mata
@@ -140,6 +142,11 @@
                         <li class="projectsList" id="organo" onmouseover="showElementProject(this)"
                             onclick="showElementProject(this)">Projeto Organo - React</li>
                     </ul>
+                    <svg onclick="nextProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                        style="transform: rotate(180deg);">
+                        <path d="m5 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
                 </div>
                 <div class="projectsBox">
                     <div id="organo" class="projectsListBox hideProjects">
