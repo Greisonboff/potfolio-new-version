@@ -5,6 +5,11 @@ var jsonInfos = [
         "link": "https://cursos.alura.com.br/certificate/greison-boff/react-crie-primeira-pagina-web",
         "nome_curso": "React: Comece seu projeto full stack"
     },
+     {
+        "categoria": "Node",
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/node-primeira-api-express",
+        "nome_curso": "Node.js: Continue seu projeto full stack criando uma API com Express"
+    },
     {
         "categoria": "React Native",
         "link": "https://cursos.alura.com.br/certificate/greison-boff/react-native-informacoes-localmente",
