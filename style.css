@@ -4,7 +4,7 @@ a {
 }
 
 #content {
-    font-size: 20px;
+    font-size: 19px;
     margin: 20px auto;
     padding: 0 10%;
     min-width: 70vw;
@@ -288,6 +288,11 @@ footer #linkedin {
 #mataMosca a,
 #organo a {
     animation: go-back .6s infinite alternate;
+}
+
+#mataMosca a.acessGit,
+#organo a.acessGit{
+    animation: none;
 }
 
 @keyframes go-back {
