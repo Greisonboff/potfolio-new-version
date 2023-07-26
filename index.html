@@ -131,8 +131,8 @@
             <h2>Projetos</h2>
             <div id="projectsContainer">
                 <div id="projectsListGrup">
-                    <svg onclick="prevProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <svg onclick="prevProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                         <path d="m5 12H5M12 19l-7-7 7-7"></path>
                     </svg>
                     <ul>
@@ -141,9 +141,11 @@
                             moscas web</li>
                         <li class="projectsList" id="organo" onmouseover="showElementProject(this)"
                             onclick="showElementProject(this)">Projeto Organo - React</li>
+                        <li class="projectsList" id="books" onmouseover="showElementProject(this)"
+                            onclick="showElementProject(this)">Projeto Books - React</li>
                     </ul>
-                    <svg onclick="nextProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                    <svg onclick="nextProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
                         style="transform: rotate(180deg);">
                         <path d="m5 12H5M12 19l-7-7 7-7"></path>
                     </svg>
@@ -156,8 +158,9 @@
                                 Organo é sistema de cadastro para um time de desenvolvimento, uma aplicação web
                                 desenvolvida em React.
                             </p>
-                            <a class="acessGit" title="Acesse o projeto" href="https://github.com/Greisonboff/organo-react"
-                                target="_blank">Visualizar projeto no github</a>
+                            <a class="acessGit" title="Acesse o projeto"
+                                href="https://github.com/Greisonboff/organo-react" target="_blank">Visualizar projeto no
+                                github</a>
                             <a title="Acesse o projeto" href="https://organo-em-react.vercel.app/"
                                 target="_blank">Visualizar projeto</a>
                         </div>
@@ -176,7 +179,8 @@
                                 de senha por e-mail, dados como pontuação recorde também são armazenados e apresentados
                                 ao jogador no fim do jogo.
                             </p>
-                            <a class="acessGit" title="Acesse o projeto" href="https://github.com/Greisonboff/game-mosquito-v3">Visualizar projeto no github</a>
+                            <a class="acessGit" title="Acesse o projeto"
+                                href="https://github.com/Greisonboff/game-mosquito-v3" target="_blank">Visualizar projeto no github</a>
                             <a title="Acesse o jogo e se divirta" id="linkGame"
                                 href="https://mata-mosca.000webhostapp.com/" target="_blank"><img
                                     src="./imagens/controle/icons8-controle-100.png">Acessar o Jogo</a>
@@ -191,6 +195,29 @@
                             src="./imagens/mata-mosca-home-4.png">
                         <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
                             src="./imagens/mata-mosca-home-5.png">
+                    </div>
+                    <div id="books" class="projectsListBox hideProjects">
+                        <div>
+                            <span>Books</span>
+                            <p>
+                                Books é uma aplicação React que consome dados de um servidor node.js,
+                                é uma estante de livros onde você pode pesquisar livros pré-cadastrados,
+                                exibir todos os livros, adicionar livros aos favoritos, remover livros
+                                dos favoritos e visualizar os livros separados por categorias.
+                            </p>
+                            <a class="acessGit books" title="Acesse o projeto"
+                                href="https://github.com/Greisonboff/books" target="_blank">Visualizar projeto no github</a>
+                        </div>
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books.png">
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books2.png">
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books3.png">
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books4.png">
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books5.png">
                     </div>
                 </div>
             </div>

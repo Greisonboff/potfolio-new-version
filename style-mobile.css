@@ -13,7 +13,8 @@
 }
 
 .mobile #organo img,
-.mobile #mataMosca img {
+.mobile #mataMosca img,
+.mobile #books img {
     width: 100%;
     height: 100%;
     margin: auto;

@@ -119,7 +119,7 @@ span {
     height: 250px;
 }
 
-@media(max-width: 1050px) {
+@media(max-width: 1215px) {
     #infoUser {
         height: 300px;
     }
@@ -234,6 +234,7 @@ footer #linkedin {
     padding: 10px 10px;
     list-style: none;
     border: 1px solid transparent;
+    text-align: center;
 }
 
 .hideProjects {
@@ -251,21 +252,26 @@ footer #linkedin {
     display: flex;
     margin: auto;
     flex-direction: column;
+    background-color: floralwhite;
+    margin-top: 15px;
 }
 
 #organo div:first-child,
-#mataMosca div:first-child {
+#mataMosca div:first-child,
+#books div:first-child{
     margin: 2% 5%;
     text-align: center;
 }
 
 #organo p,
-#mataMosca p {
+#mataMosca p,
+#books p {
     text-align: justify;
 }
 
 #organo img,
-#mataMosca img {
+#mataMosca img,
+#books img {
     width: 70%;
     height: 70%;
     margin: auto;
@@ -273,7 +279,8 @@ footer #linkedin {
 }
 
 #mataMosca img,
-#organo img {
+#organo img,
+#books img{
     cursor: pointer;
 }
 
@@ -286,12 +293,14 @@ footer #linkedin {
 }
 
 #mataMosca a,
-#organo a {
+#organo a,
+#books a{
     animation: go-back .6s infinite alternate;
 }
 
 #mataMosca a.acessGit,
-#organo a.acessGit{
+#organo a.acessGit,
+#books a.acessGit{
     animation: none;
 }
 
@@ -306,7 +315,8 @@ footer #linkedin {
 }
 
 #mataMosca a,
-#organo a {
+#organo a,
+#books a {
     text-decoration: underline;
     display: flex;
     align-items: flex-end;
