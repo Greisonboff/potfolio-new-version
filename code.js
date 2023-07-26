@@ -2,10 +2,30 @@
 var jsonInfos = [
     {
         "categoria": "React",
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/react-node-consumindo-apis-react",
+        "nome_curso": "React e Node.js: Consumindo APIs no React no projeto full stack"
+    },
+    {
+        "categoria": "React",
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/react-praticando-react-js",
+        "nome_curso": "React: Praticando React com Js"
+    },
+    {
+        "categoria": "Git",
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/git-github-repositorio-commit-versoes",
+        "nome_curso": "Git e GitHub: Repositório, commit e versões"
+    },
+    {
+        "categoria": "Git",
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/git-github-controle-de-versao",
+        "nome_curso": "Git e Github: Controle e compartilhe seu código"
+    },
+    {
+        "categoria": "React",
         "link": "https://cursos.alura.com.br/certificate/greison-boff/react-crie-primeira-pagina-web",
         "nome_curso": "React: Comece seu projeto full stack"
     },
-     {
+    {
         "categoria": "Node",
         "link": "https://cursos.alura.com.br/certificate/greison-boff/node-primeira-api-express",
         "nome_curso": "Node.js: Continue seu projeto full stack criando uma API com Express"
@@ -178,7 +198,7 @@ var jsonInfos = [
     {
         "categoria": "JavaScript",
         "link": "https://cursos.alura.com.br/certificate/greison-boff/javascript-web-paginas-dinamicas",
-        "nome_curso": "JavaScript para web: Crie páginasdinâmicas"
+        "nome_curso": "JavaScript para web: Crie páginas dinâmicas"
     },
     {
         "categoria": "JavaScript",

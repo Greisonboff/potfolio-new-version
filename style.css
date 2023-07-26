@@ -254,6 +254,7 @@ footer #linkedin {
     flex-direction: column;
     background-color: floralwhite;
     margin-top: 15px;
+    padding: 0 10px 0 10px;
 }
 
 #organo div:first-child,
