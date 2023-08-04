@@ -2,6 +2,11 @@
 var jsonInfos = [
     {
         "categoria": "React",
+        "link": "https://cursos.alura.com.br/certificate/greison-boff/react-tailwindcss-estilizando-componentes",
+        "nome_curso": "React com TailwindCSS: Estilizando componentes"
+    },
+    {
+        "categoria": "React",
         "link": "https://cursos.alura.com.br/certificate/greison-boff/react-node-consumindo-apis-react",
         "nome_curso": "React e Node.js: Consumindo APIs no React no projeto full stack"
     },
