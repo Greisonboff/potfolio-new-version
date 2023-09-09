@@ -235,6 +235,37 @@
     </div>
 
     <script type="text/javascript" src="code.js"></script>
+    <script>
+        // Defina as informações do repositório e do arquivo
+const owner = 'Greisonboff'; // Substitua pelo nome do proprietário do repositório
+const repo = 'teste-json'; // Substitua pelo nome do repositório
+const pathToFile = 'teste.json'; // Substitua pelo caminho para o arquivo JSON
+
+// Construa a URL da API do GitHub
+const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${pathToFile}`;
+
+// Faça uma solicitação GET usando XMLHttpRequest
+const xhr = new XMLHttpRequest();
+xhr.open('GET', apiUrl, true);
+
+// Configure a função de retorno para processar a resposta
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    if (xhr.status === 200) {
+      const response = JSON.parse(xhr.responseText);
+     const content = decodeURIComponent(escape(atob(response.content))); // Decodifique o conteúdo base64
+     // console.log('Conteúdo do arquivo JSON:', JSON.parse(content));
+        console.log(content);
+    } else {
+      console.error('Erro ao buscar o arquivo JSON:', xhr.status, xhr.statusText);
+    }
+  }
+};
+
+// Envie a solicitação
+xhr.send();
+
+    </script>
 </footer>
 
 </html>
