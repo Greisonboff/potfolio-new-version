@@ -282,12 +282,49 @@ var returnElement = (e) => {
         createLi(a.categoria, a.link, a.nome_curso);
     }
 }
-returnElement(jsonInfos);
+//returnElement(jsonInfos);
 /*
 fetch('http://127.0.0.1:5500/rot.json')
     .then((response) => response.json())
     .then((json) => returnElement(json));
 */
+
+
+
+// Defina as informações do repositório e do arquivo
+const owner = 'Greisonboff'; // Substitua pelo nome do proprietário do repositório
+const repo = 'teste-json'; // Substitua pelo nome do repositório
+const pathToFile = 'teste.json'; // Substitua pelo caminho para o arquivo JSON
+
+const token = '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'; // Substitua pelo seu token de acesso
+const url = 'https://api.github.com/repos/Greisonboff/data-center/contents/certificate.json'; // Substitua pela URL apropriada
+
+fetch(url, {
+    headers: {
+        'Authorization': `Bearer ${token}`
+    }
+})
+    .then(response => {
+        if (response.status === 200) {
+            returnElement(response.json());
+
+        } else {
+            returnElement(jsonInfos);
+        }
+    })
+    .then(data => {
+        // O conteúdo do arquivo estará em data.content, que será codificado em base64
+        const content = atob(data.content);
+        console.log(content);
+    })
+    .catch(error => {
+        console.error(error);
+        returnElement(jsonInfos);
+    });
+
+
+
+
 showElement = (e) => {
     for (let i = 0; i < document.querySelectorAll('#boxMenu li').length; i++) {
         document.querySelectorAll('#boxMenu li')[i].classList.remove('active');
