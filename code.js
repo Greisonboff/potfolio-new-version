@@ -283,46 +283,30 @@ var returnElement = (e) => {
     }
 }
 //returnElement(jsonInfos);
-/*
-fetch('http://127.0.0.1:5500/rot.json')
-    .then((response) => response.json())
-    .then((json) => returnElement(json));
-*/
 
+// Construa a URL da API do GitHub
+const apiUrl = `https://api.github.com/repos/Greisonboff/data-center/contents/certificate.json`;
 
+// Faça uma solicitação GET usando XMLHttpRequest
+const xhr = new XMLHttpRequest();
+xhr.open('GET', apiUrl, true);
 
-// Defina as informações do repositório e do arquivo
-const owner = 'Greisonboff'; // Substitua pelo nome do proprietário do repositório
-const repo = 'teste-json'; // Substitua pelo nome do repositório
-const pathToFile = 'teste.json'; // Substitua pelo caminho para o arquivo JSON
-
-const token = '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'; // Substitua pelo seu token de acesso
-const url = 'https://api.github.com/repos/Greisonboff/data-center/contents/certificate.json'; // Substitua pela URL apropriada
-
-fetch(url, {
-    headers: {
-        'Authorization': `Bearer ${token}`
-    }
-})
-    .then(response => {
-        if (response.status === 200) {
-            returnElement(response.json());
-
+// Configure a função de retorno para processar a resposta
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+            const response = JSON.parse(xhr.responseText);
+            const content = decodeURIComponent(escape(atob(response.content))); // Decodifique o conteúdo base64
+            returnElement(JSON.parse(content));
         } else {
             returnElement(jsonInfos);
+            console.error('Erro ao buscar o arquivo JSON:', xhr.status, xhr.statusText);
         }
-    })
-    .then(data => {
-        // O conteúdo do arquivo estará em data.content, que será codificado em base64
-        const content = atob(data.content);
-        console.log(content);
-    })
-    .catch(error => {
-        console.error(error);
-        returnElement(jsonInfos);
-    });
+    }
+};
 
-
+// Envie a solicitação
+xhr.send();
 
 
 showElement = (e) => {
