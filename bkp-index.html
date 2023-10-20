@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="icon" type="image/jpg" href="./imagens/comece.png" />
+    <title>Dev Greison</title>
+</head>
+
+<body>
+    <div id="infoUser">
+        <div id="infoUserBox">
+            <div id="infoUserBoxContacts">
+                <img src="imagens/myPhoto3-removebg.png">
+                <div id="contacts">
+                    <ul>
+                        <li>
+                            <a href="https://www.google.com/maps/place/Morro+Reuter,+RS/@-29.5421826,-51.091802,7182m/data=!3m1!1e3!4m6!3m5!1s0x951948c76afcfdaf:0x48aacbb23e14bc8d!8m2!3d-29.5401441!4d-51.0818339!16s%2Fg%2F1yy3vkllb"
+                                target="_blank">
+                                <img src="imagens/localizacao.png">
+                                Morro Reuter, RS, 93990-000
+                            </a>
+                        </li>
+                        <li>
+                            <img onclick="window.open('https://api.whatsapp.com/send?phone=5551995531841','target=_blank')"
+                                style="cursor: pointer;" src="imagens/whatsapp.png">
+                            <a href="https://api.whatsapp.com/send?phone=5551995531841" target="_blank">(51)
+                                99553-1841</a>
+                        </li>
+                        <li>
+                            <a href="mailto:greisonboff@hotmail.com?subject=Hello Greison Böff." target="_blank">
+                                <img src="imagens/e-mail.png">
+                                <label>greisonboff@hotmail.com</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/greison-boff/" target="_blank"><img
+                                    src="imagens/linkedin-black.png"></a>
+                            <a href="https://www.linkedin.com/in/greison-boff/" target="_blank">Linkedin</a>
+                        </li>
+                        <li>
+                            <a href=https://github.com/Greisonboff?tab=repositories" target="_blank"><img
+                                    src="imagens/github.svg"></a>
+                            <a href=https://github.com/Greisonboff?tab=repositories" target="_blank">Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div id="box">
+                    <ul id="boxMenu">
+                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="objective" class="active">
+                            Objetivos</li>
+                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="history">Histórico
+                            Profissional
+                        </li>
+                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="academic">Educação Acadêmica
+                        </li>
+                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="certificates">Licenças e
+                            Certificados
+                        </li>
+                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="skills">Habilidades</li>
+                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="projects">Projetos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="boxElements objective">
+            <H2>Objetivos Profissionais</H2>
+            <p>
+                Sou um profissional em busca de desafios e desenvolvimento, quero participar de projetos inovadores
+                e contribuir com o meu conhecimento para o crescimento e melhoria efetiva dos negócios, comprometido
+                com os objetivos a serem desenvolvidos. Além disso, possuo habilidades de liderança e trabalho em
+                equipe, o que me permite colaborar de forma eficaz com colegas e subordinados, visando sempre alcançar
+                resultados de excelência. Sou uma pessoa proativa e busco sempre aprender e me atualizar sobre as
+                tendências do mercado, a fim de agregar valor ao meu trabalho e aos projetos nos quais estou envolvido.
+                Tenho ainda um perfil analítico e estratégico, o que me permite identificar oportunidades de melhoria e
+                propor soluções inovadoras para problemas complexos. Estou disposto a encarar novos desafios e a me
+                adaptar rapidamente a diferentes situações, sempre com foco na entrega de resultados e na satisfação dos
+                clientes e stakeholders envolvidos.
+            </p>
+        </div>
+        <div class="boxElements history hide">
+            <H2>Histórico Profissional</H2>
+            <h3>Analista Google</h3>
+            <p>Meta - São Leopoldo, Rio Grande do Sul, Brasil
+                mar de 2021 - Atualmente</p>
+            <p>Analise e desenvolvimento de testes A/B realizados no Google Optimize, desenvolvimento de Tags
+                para Google Tag Manager, análise de dados com Google Analytics, desenvolvimento de Dashboard com
+                Google Data Studio e exportação, analise e automações com Google Sheets.</p>
+            <hr>
+            <h3>Operador de eletroerosão/Auxiliar de matrizaria</h3>
+            <p>KSD Metais - Dois Irmãos, Rio Grande do Sul, Brasil
+                out de 2020 - mar de 2021 · 6 meses</p>
+            <p>Ferramenteiro metalúrgico, operação de máquinas de eletroerosão, retifica plana, freza, furação,
+                tempera, polimento e acabamento de matriz de aço para injeção de zamac.</p>
+            <hr>
+            <h3>Operador de eletro erosão/Auxiliar de matrizaria</h3>
+            <p>Metalúrgica Reuter - Morro Reuter, Rio Grande do Sul, Brasil
+                out de 2009 - mai de 2020 · 10 anos 8 meses</p>
+            <p>Operação de máquinas de eletroerosão, operador de CNC, tempera de matriz de aço para injeção de
+                zamac, operador de injetora zamac matriz de aço e borracha.</p>
+        </div>
+        <div class="boxElements academic hide">
+            <h2>Educação Acadêmica</h2>
+            <h4>UNINTER Centro Universitário Internacional</h4>
+            <p>Ensino Superior, Analise e desenvolvimento de sistemas
+                2019 - dez de 2021
+            </p>
+        </div>
+        <div class="boxElements certificates hide">
+            <H2>Licenças e Certificados</H2>
+        </div>
+        <div class="boxElements skills hide">
+            <h2>Habilidades</h2>
+            <p>
+                Comunicativo e focado em trazer resultados ao cliente, autonomia e organização com as tarefas a serem
+                realizadas. Envolvido plenamente com os projetos, encaro os desafios sem medir os esforços para atingir
+                os objetivos, com flexibilidade e capacidade de se adaptar a mudanças. Capaz de analisar cenários para
+                buscar a melhor solução para superar os desafios propostos. Sou um Desenvolvedor que ajuda os clientes a
+                desenvolverem seus projetos para que possam atingir os resultados desejados.
+            </p>
+        </div>
+        <div class="boxElements projects hide">
+            <h2>Projetos</h2>
+            <div id="projectsContainer">
+                <div id="projectsListGrup">
+                    <svg onclick="prevProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m5 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                    <ul>
+                        <li class="projectsList projectsListActive" id="mataMosca"
+                            onmouseover="showElementProject(this)" onclick="showElementProject(this)">Projeto Jogo mata
+                            moscas web</li>
+                        <li class="projectsList" id="organo" onmouseover="showElementProject(this)"
+                            onclick="showElementProject(this)">Projeto Organo - React</li>
+                        <li class="projectsList" id="books" onmouseover="showElementProject(this)"
+                            onclick="showElementProject(this)">Projeto Books - React</li>
+                    </ul>
+                    <svg onclick="nextProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                        style="transform: rotate(180deg);">
+                        <path d="m5 12H5M12 19l-7-7 7-7"></path>
+                    </svg>
+                </div>
+                <div class="projectsBox">
+                    <div id="organo" class="projectsListBox hideProjects">
+                        <div>
+                            <span>Organo</span>
+                            <p>
+                                Organo é sistema de cadastro para um time de desenvolvimento, uma aplicação web
+                                desenvolvida em React.
+                            </p>
+                            <a class="acessGit" title="Acesse o projeto"
+                                href="https://github.com/Greisonboff/organo-react" target="_blank">Visualizar projeto no
+                                github</a>
+                            <a title="Acesse o projeto" href="https://organo-em-react.vercel.app/"
+                                target="_blank">Visualizar projeto</a>
+                        </div>
+                        <img title="Acesse o projeto" onclick="document.querySelectorAll('#organo a')[1].click()"
+                            src="./imagens/organo-3.png">
+                    </div>
+                    <div id="mataMosca" class="projectsListBox">
+                        <div>
+                            <span>Jogo Mata Moscas</span>
+                            <p>
+                                O Jogo Mata Moscas é uma aplicação web desenvolvida em html, css, javascript, jquery e
+                                php. A aplicação é um jogo com o intuito de matar as moscas em um determinado tempo, ao
+                                passar para os próximos níveis as dificuldades vão aumentando e por fim se acabar o
+                                tempo ou o número de moscas na tela passar do limite finaliza o jogo. Conta com login de
+                                cadastro que salvas os dados em um banco de dados, com validações de senha e recuperação
+                                de senha por e-mail, dados como pontuação recorde também são armazenados e apresentados
+                                ao jogador no fim do jogo.
+                            </p>
+                            <a class="acessGit" title="Acesse o projeto"
+                                href="https://github.com/Greisonboff/game-mosquito-v3" target="_blank">Visualizar projeto no github</a>
+                            <a title="Acesse o jogo e se divirta" id="linkGame"
+                                href="https://mata-mosca.000webhostapp.com/" target="_blank"><img
+                                    src="./imagens/controle/icons8-controle-100.png">Acessar o Jogo</a>
+                        </div>
+                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
+                            src="./imagens/mata-mosca-home.png">
+                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
+                            src="./imagens/mata-mosca-home-2.png">
+                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
+                            src="./imagens/mata-mosca-home-3.png">
+                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
+                            src="./imagens/mata-mosca-home-4.png">
+                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
+                            src="./imagens/mata-mosca-home-5.png">
+                    </div>
+                    <div id="books" class="projectsListBox hideProjects">
+                        <div>
+                            <span>Books</span>
+                            <p>
+                                Books é uma aplicação React que consome dados de um servidor node.js,
+                                é uma estante de livros onde você pode pesquisar livros pré-cadastrados,
+                                exibir todos os livros, adicionar livros aos favoritos, remover livros
+                                dos favoritos e visualizar os livros separados por categorias.
+                            </p>
+                            <a class="acessGit books" title="Acesse o projeto"
+                                href="https://github.com/Greisonboff/books" target="_blank">Visualizar projeto no github</a>
+                        </div>
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books.png">
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books2.png">
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books3.png">
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books4.png">
+                        <img title="Acesse o jogo e se divirta"
+                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books5.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div>
+        <a href="https://www.linkedin.com/in/greison-boff/" target="_blank" title="Visite meu linkedin &#128522"><img
+                src="./imagens/linkedin.gif" id="linkedin" /></a>
+        <section id="citation">
+            <h3>A criatividade é pensar coisas novas. A inovação é fazer coisas novas.</h3><span>(Theodore
+                Levitt)</span>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="code.js"></script>
+    <script type="text/javascript" src="projetos.js"></script>
+</footer>
+
+</html>

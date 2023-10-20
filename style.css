@@ -257,6 +257,13 @@ footer #linkedin {
     padding: 0 10px 0 10px;
 }
 
+.projectsListBox a{
+    text-decoration: underline;
+    display: flex;
+    align-items: flex-end;
+    padding: 12px;
+}
+
 #organo div:first-child,
 #mataMosca div:first-child,
 #books div:first-child{
@@ -270,18 +277,11 @@ footer #linkedin {
     text-align: justify;
 }
 
-#organo img,
-#mataMosca img,
-#books img {
+.projectsBox img {
     width: 70%;
     height: 70%;
     margin: auto;
     padding-bottom: 4%;
-}
-
-#mataMosca img,
-#organo img,
-#books img{
     cursor: pointer;
 }
 
@@ -291,37 +291,6 @@ footer #linkedin {
     padding: 0;
     margin: 0;
     padding-right: 10px
-}
-
-#mataMosca a,
-#organo a,
-#books a{
-    animation: go-back .6s infinite alternate;
-}
-
-#mataMosca a.acessGit,
-#organo a.acessGit,
-#books a.acessGit{
-    animation: none;
-}
-
-@keyframes go-back {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.01);
-    }
-}
-
-#mataMosca a,
-#organo a,
-#books a {
-    text-decoration: underline;
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 4%;
 }
 
 #infoUserBox {

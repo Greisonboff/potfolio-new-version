@@ -52,18 +52,18 @@
             <div>
                 <div id="box">
                     <ul id="boxMenu">
-                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="objective" class="active">
+                        <li onclick="showElement(this)" id="objective" class="active">
                             Objetivos</li>
-                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="history">Histórico
+                        <li onclick="showElement(this)" id="history">Histórico
                             Profissional
                         </li>
-                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="academic">Educação Acadêmica
+                        <li onclick="showElement(this)" id="academic">Educação Acadêmica
                         </li>
-                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="certificates">Licenças e
+                        <li onclick="showElement(this)" id="certificates">Licenças e
                             Certificados
                         </li>
-                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="skills">Habilidades</li>
-                        <li onmouseover="showElement(this)" onclick="showElement(this)" id="projects">Projetos</li>
+                        <li onclick="showElement(this)" id="skills">Habilidades</li>
+                        <li onclick="showElement(this)" id="projects">Projetos</li>
                     </ul>
                 </div>
             </div>
@@ -135,14 +135,7 @@
                         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                         <path d="m5 12H5M12 19l-7-7 7-7"></path>
                     </svg>
-                    <ul>
-                        <li class="projectsList projectsListActive" id="mataMosca"
-                            onmouseover="showElementProject(this)" onclick="showElementProject(this)">Projeto Jogo mata
-                            moscas web</li>
-                        <li class="projectsList" id="organo" onmouseover="showElementProject(this)"
-                            onclick="showElementProject(this)">Projeto Organo - React</li>
-                        <li class="projectsList" id="books" onmouseover="showElementProject(this)"
-                            onclick="showElementProject(this)">Projeto Books - React</li>
+                    <ul id="box-click-projects">
                     </ul>
                     <svg onclick="nextProject()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
@@ -151,74 +144,6 @@
                     </svg>
                 </div>
                 <div class="projectsBox">
-                    <div id="organo" class="projectsListBox hideProjects">
-                        <div>
-                            <span>Organo</span>
-                            <p>
-                                Organo é sistema de cadastro para um time de desenvolvimento, uma aplicação web
-                                desenvolvida em React.
-                            </p>
-                            <a class="acessGit" title="Acesse o projeto"
-                                href="https://github.com/Greisonboff/organo-react" target="_blank">Visualizar projeto no
-                                github</a>
-                            <a title="Acesse o projeto" href="https://organo-em-react.vercel.app/"
-                                target="_blank">Visualizar projeto</a>
-                        </div>
-                        <img title="Acesse o projeto" onclick="document.querySelectorAll('#organo a')[1].click()"
-                            src="./imagens/organo-3.png">
-                    </div>
-                    <div id="mataMosca" class="projectsListBox">
-                        <div>
-                            <span>Jogo Mata Moscas</span>
-                            <p>
-                                O Jogo Mata Moscas é uma aplicação web desenvolvida em html, css, javascript, jquery e
-                                php. A aplicação é um jogo com o intuito de matar as moscas em um determinado tempo, ao
-                                passar para os próximos níveis as dificuldades vão aumentando e por fim se acabar o
-                                tempo ou o número de moscas na tela passar do limite finaliza o jogo. Conta com login de
-                                cadastro que salvas os dados em um banco de dados, com validações de senha e recuperação
-                                de senha por e-mail, dados como pontuação recorde também são armazenados e apresentados
-                                ao jogador no fim do jogo.
-                            </p>
-                            <a class="acessGit" title="Acesse o projeto"
-                                href="https://github.com/Greisonboff/game-mosquito-v3" target="_blank">Visualizar projeto no github</a>
-                            <a title="Acesse o jogo e se divirta" id="linkGame"
-                                href="https://mata-mosca.000webhostapp.com/" target="_blank"><img
-                                    src="./imagens/controle/icons8-controle-100.png">Acessar o Jogo</a>
-                        </div>
-                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
-                            src="./imagens/mata-mosca-home.png">
-                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
-                            src="./imagens/mata-mosca-home-2.png">
-                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
-                            src="./imagens/mata-mosca-home-3.png">
-                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
-                            src="./imagens/mata-mosca-home-4.png">
-                        <img title="Acesse o jogo e se divirta" onclick="document.querySelector('#linkGame').click()"
-                            src="./imagens/mata-mosca-home-5.png">
-                    </div>
-                    <div id="books" class="projectsListBox hideProjects">
-                        <div>
-                            <span>Books</span>
-                            <p>
-                                Books é uma aplicação React que consome dados de um servidor node.js,
-                                é uma estante de livros onde você pode pesquisar livros pré-cadastrados,
-                                exibir todos os livros, adicionar livros aos favoritos, remover livros
-                                dos favoritos e visualizar os livros separados por categorias.
-                            </p>
-                            <a class="acessGit books" title="Acesse o projeto"
-                                href="https://github.com/Greisonboff/books" target="_blank">Visualizar projeto no github</a>
-                        </div>
-                        <img title="Acesse o jogo e se divirta"
-                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books.png">
-                        <img title="Acesse o jogo e se divirta"
-                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books2.png">
-                        <img title="Acesse o jogo e se divirta"
-                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books3.png">
-                        <img title="Acesse o jogo e se divirta"
-                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books4.png">
-                        <img title="Acesse o jogo e se divirta"
-                            onclick="document.querySelector('.acessGit.books').click()" src="./imagens/books5.png">
-                    </div>
                 </div>
             </div>
         </div>
@@ -235,6 +160,7 @@
     </div>
 
     <script type="text/javascript" src="code.js"></script>
+    <script type="text/javascript" src="projetos.js"></script>
 </footer>
 
 </html>

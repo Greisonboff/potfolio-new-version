@@ -1,0 +1,23 @@
+[
+    {
+        "nome_projeto": "Books",
+        "descricao": "Books é uma aplicação React que consome dados de um servidor node.js, é uma estante de livros onde você pode pesquisar livros pré-cadastrados, exibir todos os livros, adicionar livros aos favoritos, remover livros dos favoritos e visualizar os livros separados por categorias.",
+        "link": "sem link",
+        "link_git": "https://github.com/Greisonboff/organo-react",
+        "caminho_imagem": "books"
+    },
+    {
+        "nome_projeto": "Organo",
+        "descricao": "Organo é sistema de cadastro para um time de desenvolvimento, uma aplicação web desenvolvida em React.",
+        "link": "https://organo-em-react.vercel.app/",
+        "link_git": "https://github.com/Greisonboff/organo-react",
+        "caminho_imagem": "organo-"
+    },
+    {
+        "nome_projeto": "Jogo mata moscas",
+        "descricao": "O Jogo Mata Moscas é uma aplicação web desenvolvida em html, css, javascript, jquery e php. A aplicação é um jogo com o intuito de matar as moscas em um determinado tempo, ao passar para os próximos níveis as dificuldades vão aumentando e por fim se acabar o tempo ou o número de moscas na tela passar do limite finaliza o jogo. Conta com login de cadastro que salvas os dados em um banco de dados, com validações de senha e recuperação de senha por e-mail, dados como pontuação recorde também são armazenados e apresentados ao jogador no fim do jogo.",
+        "link": "https://mata-mosca.000webhostapp.com/",
+        "link_git": "sem link",
+        "caminho_imagem": "mata-mosca-home-"
+    }
+]
